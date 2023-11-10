@@ -47,7 +47,9 @@ class linear_regression_ml:
     @staticmethod
     def make_prediction(w, b, feature):
         prediction = (w * feature) + b
-        print("A city with {} population may give {:.2f}$ profit".format(feature * 10_000, prediction * 10_000))
+        print("A city with {} population may give {:.2f}$ profit".format(
+            feature * 10_000, prediction * 10_000
+        ))
 
     def accuracy_visualization(self, w, b):
         predictions = (w * self.features) + b
